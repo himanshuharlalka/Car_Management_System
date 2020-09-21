@@ -6,6 +6,208 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="143dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textColor="#0F3310"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/startImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/start" />
+
+    <TextView
+
+        android:id="@+id/distanceTextView"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="71dp"
+        android:background="#228B22"
+        android:paddingTop="22dp"
+        android:text="300km"
+        android:textAlignment="center"
+        android:textColor="#D6D1D1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/durationTextView"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="71dp"
+        android:background="#228B22"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#D6D1D1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/durationTitleTextView"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="46dp"
+        android:text="Duration:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        app:layout_constraintBottom_toTopOf="@+id/durationTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/distanceTitleTextView"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="246dp"
+        android:background="#FFFFFF"
+        android:text="Distance:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/distanceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="246dp"
+        android:background="#228B22"
+        android:paddingTop="22dp"
+        android:text="100kph"
+        android:textAlignment="center"
+        android:textColor="#D6D1D1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceTitleTextView" />
+
+    <TextView
+        android:id="@+id/avgSpeedTextView"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="46dp"
+        android:background="#228B22"
+        android:paddingTop="22dp"
+        android:text="60kph"
+        android:textAlignment="center"
+        android:textColor="#D6D1D1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/durationTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/speedTitleTextView"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="246dp"
+        android:text="Speed:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        app:layout_constraintBottom_toTopOf="@+id/speedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/distanceTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/avgSpeedTitleTextView"
+        android:layout_width="117dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="46dp"
+        android:text="Average Speed:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        app:layout_constraintBottom_toTopOf="@+id/avgSpeedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/durationTextView" />
+
+    <ImageView
+        android:id="@+id/stopImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedTextView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/stop" />
+
+    <ImageView
+        android:id="@+id/sosImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avgSpeedTextView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sos" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
